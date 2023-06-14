@@ -6,3 +6,18 @@
  * adulto (18-59 anos) ou idoso (60 anos ou mais). Utiliza uma estrutura condicional
  * (if, else if, else).
  */
+
+var idade =63
+
+if (idade > 0 & idade <= 12) {
+    console.log("criança")
+} 
+else if (idade > 12 & idade <= 17) {
+    console.log ("adolescente")
+}
+else if (idade > 17 & idade <= 59) {
+    console.log ("adulto")
+}
+else if (idade > 60) {
+    console.log ("idoso")
+}
