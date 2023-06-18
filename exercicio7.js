@@ -10,3 +10,25 @@
  *      remover os elementos do array compreendidos entre os índices inicial e final. Em seguida, retorna o
  *      array atualizado.
  */
+
+let palavras = ['abra', 'bulbassauro', 'charmander', 'dugtrio', 'ekans', 'muk', 'seel', 'vulpix']
+
+function adicionarElemento(arr, elemento) {
+    arr.push(elemento)
+    return arr
+}
+
+/*console.log(adicionarElemento(palavras, "squirtle"))*/
+
+function removerUltimoElemento(arr) {
+    arr.pop()
+    return arr
+}
+/*console.log(removerUltimoElemento(palavras))*/
+
+function removerElementosIntervalo(arr,inicial,final) {
+/*    const newArr = arr.slice(inicial+1, final)*/
+    arr.splice(inicial+1, final-inicial-1)
+    return arr
+}
+/*console.log(removerElementosIntervalo(palavras,1,7))*/
